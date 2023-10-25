@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(4, 4, 46);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.moon {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    border-radius: 50%;
+    background-image: url(https://pngfre.com/wp-content/uploads/moon-58-1024x1024.png);
+    background-size: cover;
+}
+
+
+.moon::after {
+    content: "";
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: -30px;
+    left: -20px;
+    background-color: rgb(4, 4, 46);
+    /* background-color: rgb(255,0,0); */
+    border-radius: 50%;
+}
+
+
+
+/* common between all stars */
+.star {
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 2px 0 #fff;
+    animation-name: twinkle;
+    animation-iteration-count: infinite;
+    position: absolute;
+   
+}
+
+
+.s1{
+    animation-duration: 1.8s;
+    top:200px;
+    left: 200px;
+}
+.s2{
+    top:150px;
+    right:200px;
+    animation-duration: 1.9s;
+}
+.s3{
+    bottom:250px;
+    right:400px;
+    animation-duration: 1.5s;
+}
+.s4{
+    bottom:300px;
+    left:300px;
+    animation-duration: 1.2s;
+}
+.s5{
+
+    top:500px;
+    left:100px;
+    animation-duration: 1s;
+}
+.s6{
+    top:50px;
+    left:700px;
+    animation-duration: 1.9s;
+}
+.s7{
+    bottom:400px;
+    right:300px;
+    animation-duration: 1.6s;
+}
+.s8{
+    top:600px;
+    right:700px;
+    animation-duration: 1.4s;
+}
+.s9{
+
+    bottom:100px;
+    right:500px;
+    animation-duration: 2s;
+}
+.s10{
+    top:200px;
+    right:800px;
+    animation-duration: 1s;
+}
+
+
+
+
+
+
+
+@keyframes twinkle {
+    0% {
+        /* scale is for size */
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
