@@ -38,3 +38,31 @@ body{
     position: absolute;
     top:-50px;
 }
+
+
+
+/* small hearts */
+.small-heart{
+    width:30px;
+    height:30px;
+}
+.small-heart::after{
+    width:30px;
+    height:30px;
+    left:-15px;
+}
+.small-heart::before{
+    width:30px;
+    height:30px;
+    top:-15px;
+}
+
+/* seperate classes used for positions */
+.heart-1{
+    top:100px;
+    left:100px;
+}
+.heart-2{
+    top:200px;
+    left:200px;
+}
